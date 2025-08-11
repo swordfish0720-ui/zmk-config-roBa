@@ -133,6 +133,13 @@
 
             tap-ms = <20>;
         };
+
+        HENKAN_TOGGLE: HENKAN_TOGGLE {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HENKAN_TOGGLE";
+            #binding-cells = <0>;
+            bindings = <&lt 1 INT_MUHENKAN>, <&lt 2 INT_HENKAN>;
+        };
     };
 
     keymap {
@@ -143,7 +150,7 @@
 &kp Q      &kp W         &kp E         &kp R  &kp T                                         &kp Y  &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F  &kp G      &kp RC(C_PAUSE)      &kp JP_TILDE  &kp H  &kp J  &kp K      &kp L    &kp ENTER
 &kp Z      &kp X         &kp C         &kp V  &kp B      &kp ESCAPE           &kp MINUS     &kp N  &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp SPACE  &kp LEFT_SHIFT       &mo 1         &mo 2                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp SPACE  &HENKAN_TOGGLE       &mo 1         &mo 2                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
