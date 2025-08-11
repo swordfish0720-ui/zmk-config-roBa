@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HENKAN_TOGGLE";
             #binding-cells = <0>;
-            bindings = <&lt 1 INT_MUHENKAN>, <&lt 2 INT_HENKAN>;
+            bindings = <&lt 3 INT_MUHENKAN>, <&lt 3 INT_HENKAN>;
         };
 
         shift_toggle: shift_toggle {
@@ -161,10 +161,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R  &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F  &kp G      &trans              &kp JP_TILDE     &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&kp Z         &kp X         &kp C         &kp V  &kp B      &kp ESCAPE          &kp MINUS        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&ctrl_toggle  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp SPACE  &henkan_toggle      &lt 1 BACKSPACE  &lt 2 ENTER                             &shift_toggle
+&kp Q      &kp W         &kp E         &kp R  &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F  &kp G      &trans              &kp ESCAPE       &kp H        &kp J  &kp K      &kp L    &kp SEMI
+&kp Z      &kp X         &kp C         &kp V  &kp B      &kp TAB             &kp DELETE       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp SPACE  &henkan_toggle      &lt 1 BACKSPACE  &lt 2 ENTER                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -172,10 +172,10 @@
 
         SYMBOL_FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp DOLLAR    &kp LESS_THAN  &kp GREATER_THAN  &kp JP_AT                                   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&kp JP_COLON     &kp PERCENT   &kp JP_LPAR    &kp JP_RPAR       &kp SLASH   &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&kp JP_SEMI      &kp JP_AMPS   &kp JP_LBKT    &kp JP_RBKT       &kp JP_YEN  &kp JP_HASH         &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&kp LCTRL        &kp LEFT_WIN  &kp LEFT_ALT   &trans            &kp SPACE   &kp LEFT_SHIFT      &trans      &trans                              &trans
+&kp EXCLAMATION  &kp DOLLAR   &kp LESS_THAN  &kp GREATER_THAN  &kp JP_AT                                &kp F1      &kp F2   &kp F3   &kp F4   &kp F5
+&kp JP_COLON     &kp PERCENT  &kp JP_LPAR    &kp JP_RPAR       &kp SLASH   &trans           &kp JP_DQT  &kp F6      &kp F7   &kp F8   &kp F9   &kp F10
+&kp JP_SEMI      &kp JP_AMPS  &kp JP_LBKT    &kp JP_RBKT       &kp JP_YEN  &kp JP_HASH      &kp JP_SQT  &kp F11     &kp F12  &kp F13  &kp F14  &kp QUESTION
+&trans           &trans       &trans         &trans            &kp TAB     &trans           &kp DELETE  &kp INSERT                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
