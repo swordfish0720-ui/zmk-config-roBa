@@ -192,7 +192,7 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        MOUSE {
+        SCROLL1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
@@ -219,7 +219,16 @@
             >;
         };
 
-        SCROLL {
+        SCROLL2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
+            >;
+        };
+
+        MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
