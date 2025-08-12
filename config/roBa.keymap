@@ -172,7 +172,7 @@
 
         ARROW_NUM {
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                                   &kp JP_ASTRK   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RSHIFT
+&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                                   &trans         &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RSHIFT
 &kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &kp COMMA   &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LCTRL
 &kp INT_YEN   &kp N1  &kp N2  &kp N3     &kp EQUAL  &trans              &kp PERIOD  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &mkp MB5
 &kp DOLLAR    &kp N0  &trans  &kp LCTRL  &kp TAB    &kp LEFT_SHIFT      &trans      &trans                                                          &trans
