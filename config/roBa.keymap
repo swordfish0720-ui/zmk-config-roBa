@@ -186,10 +186,10 @@
 
         ARROW_NUM {
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                            &kp JP_ASTRK   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
-&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS       &trans      &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &trans
-&trans        &kp N1  &kp N2  &kp N3     &kp EQUAL       &trans      &trans  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &mkp MB5
-&trans        &kp N0  &trans  &kp LCTRL  &kp LEFT_SHIFT  &trans      &trans  &trans                                                          &shift_toggle
+&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                               &kp JP_ASTRK   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
+&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &trans
+&trans        &kp N1  &kp N2  &kp N3     &kp EQUAL  &trans              &trans  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &mkp MB5
+&trans        &kp N0  &trans  &kp LCTRL  &kp TAB    &kp LEFT_SHIFT      &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -197,10 +197,10 @@
 
         SYMBOL_FUNCTION {
             bindings = <
-&trans  &kp F7   &kp F8  &kp F9     &kp F11                                 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&trans  &kp F4   &kp F5  &kp F6     &kp F12         &trans      &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&trans  &kp F1   &kp F2  &kp F3     &trans          &trans      &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&trans  &kp F10  &trans  &kp LCTRL  &kp LEFT_SHIFT  &trans      &trans      &trans                              &mo 3
+&trans  &kp F7   &kp F8  &kp F9     &kp F11                                  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&trans  &kp F4   &kp F5  &kp F6     &kp F12  &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&trans  &kp F1   &kp F2  &kp F3     &trans   &trans              &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
+&trans  &kp F10  &trans  &kp LCTRL  &kp TAB  &kp LEFT_SHIFT      &trans      &trans                              &mo 3
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -208,19 +208,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans      &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &mkp MB1  &kp RCTRL  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &kp INSERT                                 &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
         };
 
         SHORTCUT {
             bindings = <
-&kp LA(TAB)         &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &kp PRINTSCREEN    &trans                                          &trans      &trans    &trans     &trans    &trans
-&kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(W))  &trans               &trans      &trans      &mkp MB1  &kp RCTRL  &mkp MB2  &trans
-&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(LS(TAB))  &kp LC(TAB)        &trans         &kp LS(JP_EISU)      &trans      &trans      &trans    &trans     &trans    &trans
-&trans              &trans               &trans           &trans             &trans         &trans               &kp DELETE  &kp INSERT                                 &trans
+&kp LA(TAB)         &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &kp PRINTSCREEN    &trans                                          &trans  &trans    &trans     &trans    &trans
+&kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(W))  &trans               &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(LS(TAB))  &kp LC(TAB)        &trans         &kp LS(JP_EISU)      &trans      &trans  &trans    &trans     &trans    &trans
+&trans              &trans               &trans           &trans             &trans         &trans               &kp DELETE  &trans                                 &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -228,10 +228,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &kp INSERT                          &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                          &trans
             >;
         };
 
