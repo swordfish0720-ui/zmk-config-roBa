@@ -63,32 +63,31 @@
         18 // J
         19 // K
         20 // L
-        39 // Shift
     >;
 };
 
 //トラックボール操作時AML動作定義
 
-&trackball_listener { input-processors = <&zip_temp_layer 4 500>; };
+&trackball_listener { input-processors = <&zip_temp_layer 7 500>; };
 
 //マウスクリック操作時AML動作定義
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 7 250>; };
 
 &trackball {
-    //  automouse-layer = <4>;
-    //  scroll-layers = <3>;
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+    //  automouse-layer = <7>;
+    scroll-layers = <3> or <6>;
+    arrows {
+        layers = <3> or <6>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
