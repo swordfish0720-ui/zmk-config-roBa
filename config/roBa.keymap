@@ -134,27 +134,6 @@
             tap-ms = <20>;
         };
 
-        henkan_toggle: henkan_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "HENKAN_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&lt 4 INT_MUHENKAN>, <&lt 4 INT_HENKAN>;
-        };
-
-        shift_toggle: shift_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kt LEFT_SHIFT>;
-        };
-
-        ctrl_toggle: ctrl_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&kp RCTRL>, <&kt RCTRL>;
-        };
-
         enter_l1: enter_l1 {
             compatible = "zmk,behavior-tap-dance";
             label = "ENTER_L1";
@@ -168,6 +147,13 @@
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
         };
+
+        space_l3: space_l3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_L3";
+            #binding-cells = <0>;
+            bindings = <&lt 4 SPACE>, <&kp SPACE>;
+        };
     };
 
     keymap {
@@ -178,7 +164,7 @@
 &kp Q      &kp W         &kp E         &kp R               &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F               &kp G      &trans                &kp ESCAPE     &kp H      &kp J  &kp K      &kp L    &kp LEFT_SHIFT
 &kp Z      &kp X         &kp C         &kp V               &kp B      &kp TAB               &kp DELETE     &kp N      &kp M  &kp COMMA  &kp DOT  &kp RCTRL
-&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &kp SPACE  &lt 3 INT_HENKAN      &backspace_l2  &enter_l1                             &kp LEFT_SHIFT
+&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &space_l3  &lt 3 INT_HENKAN      &backspace_l2  &enter_l1                             &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
