@@ -176,8 +176,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R               &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F               &kp G      &trans                &kp ESCAPE     &kp H      &kp J  &kp K      &kp L    &kp SEMI
-&kp Z      &kp X         &kp C         &kp V               &kp B      &kp TAB               &kp DELETE     &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp A      &kp S         &kp D         &kp F               &kp G      &trans                &kp ESCAPE     &kp H      &kp J  &kp K      &kp L    &kp LEFT_SHIFT
+&kp Z      &kp X         &kp C         &kp V               &kp B      &kp TAB               &kp DELETE     &kp N      &kp M  &kp COMMA  &kp DOT  &kp RCTRL
 &kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &kp SPACE  &lt 3 INT_HENKAN      &backspace_l2  &enter_l1                             &kp LEFT_SHIFT
             >;
 
@@ -186,8 +186,8 @@
 
         ARROW_NUM {
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                               &kp JP_ASTRK   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
-&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &trans
+&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                               &kp JP_ASTRK   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RSHIFT
+&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LCTRL
 &trans        &kp N1  &kp N2  &kp N3     &kp EQUAL  &trans              &trans  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &mkp MB5
 &trans        &kp N0  &trans  &kp LCTRL  &kp TAB    &kp LEFT_SHIFT      &trans  &trans                                                          &trans
             >;
