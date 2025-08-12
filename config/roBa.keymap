@@ -80,7 +80,7 @@
     scroll-layers = <3>;
 
     arrows {
-        layers = <3k>;
+        layers = <3>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
