@@ -201,12 +201,12 @@
             >;
         };
 
-        layer_8 {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
+&trans  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(N8)                                         &kp LS(N9)   &trans  &trans    &trans   &trans
+&kp AT  &kp LS(N4)     &kp LS(N5)  &kp LS(N6)  &kp RBKT       &trans         &trans               &kp NUHS     &trans  &trans    &trans   &kp LEFT_SHIFT
+&trans  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &kp SLASH      &kp INTERNATIONAL_1  &kp LS(DOT)  &trans  &kp SEMI  &kp SQT  &trans
+&trans  &kp LS(SLASH)  &trans      &trans      &trans         &trans         &kp DELETE           &trans                                  &trans
             >;
         };
 
