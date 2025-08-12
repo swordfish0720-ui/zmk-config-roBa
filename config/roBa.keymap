@@ -181,12 +181,12 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        SYMBOL_FUNCTION {
+        FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9     &kp F10                              &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&trans  &kp F4  &kp F5  &kp F6     &kp F11  &trans              &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&trans  &kp F1  &kp F2  &kp F3     &kp F12  &trans              &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&trans  &trans  &trans  &kp LCTRL  &kp TAB  &kp LEFT_SHIFT      &trans  &trans                              &mo 3
+&trans  &kp F7  &kp F8  &kp F9     &kp F10                              &trans  &trans  &trans  &trans  &trans
+&trans  &kp F4  &kp F5  &kp F6     &kp F11  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3     &kp F12  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LCTRL  &kp TAB  &kp LEFT_SHIFT      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -201,7 +201,7 @@
             >;
         };
 
-        SHORTCUT {
+        SYMBOL {
             bindings = <
 &kp LA(TAB)         &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &kp PRINTSCREEN    &trans                                          &trans  &trans    &trans     &trans    &trans
 &kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(W))  &trans               &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
