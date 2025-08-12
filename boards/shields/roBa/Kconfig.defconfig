@@ -21,7 +21,7 @@ config ZMK_SPLIT
 
 endif
 
-//バッテリー残量個別表示
+#バッテリー残量個別表示
 if SHIELD_ROBA_R || SHIELD_ROBA_L
 
 CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
