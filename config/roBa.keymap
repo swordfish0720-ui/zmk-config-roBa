@@ -68,8 +68,13 @@
 
 //トラックボール操作時AML動作定義
 
-&trackball_listener { input-processors = <&zip_temp_layer 7 500
-                                          &interrupter (3 | 6)>; };
+&trackball_listener {
+    input-processors = <&zip_temp_layer 7 500>;
+    sensor-bindings {
+        compatible = "zmk,sensor-binding";
+        when-layers-active = <0 1 2 4 5>; // Layer3,6を除外
+    };
+};
 
 //マウスクリック操作時AML動作定義
 
