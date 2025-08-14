@@ -171,6 +171,15 @@
 
             tapping-term-ms = <200>;
         };
+
+        encoder_msc_right_left: encoder_msc_right_left {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_RIGHT_LEFT";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -217,7 +226,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_right_left>;
         };
 
         SYMBOL {
@@ -228,7 +237,7 @@
 &trans    &kp LS(SLASH)  &trans      &trans      &trans         &trans         &kp DELETE               &trans                                                   &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_right_left>;
         };
 
         layer_6 {
@@ -239,10 +248,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                          &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_right_left>;
         };
 
-        SCROLL2 {
+        Bluetooth {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                                  &trans  &trans    &trans     &trans    &trans
 &trans  &bt BT_SEL 4  &trans        &trans        &trans  &trans              &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
