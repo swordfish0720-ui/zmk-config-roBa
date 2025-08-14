@@ -80,7 +80,7 @@
     scroll-layers = <8>;
 
     arrows {
-       layers = <8>;
+        layers = <8>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
@@ -237,6 +237,29 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        SCROLL_1 {
+            if-layers = <3 7>;
+            then-layer = <8>;
+        };
+
+        SCROLL_2 {
+            if-layers = <6 7>;
+            then-layer = <8>;
         };
     };
 };
