@@ -53,11 +53,11 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
 };
 
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
     flavor = "hold-preferred";
 };
 
@@ -186,10 +186,10 @@
 
         ARROW_NUM {
             bindings = <
-&kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                                   &kp LC(Z)      &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp LC(Y)
-&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &kp COMMA   &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LEFT_SHIFT
-&kp INT_YEN   &kp N1  &kp N2  &kp N3     &kp EQUAL  &kp DOLLAR          &kp PERIOD  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &kp LEFT_CONTROL
-&trans        &kp N0  &trans  &kp LCTRL  &kp TAB    &kp LEFT_SHIFT      &trans      &trans                                                          &mkp MB5
+&kp LS(SQT)  &kp N7  &kp N8  &kp N9     &kp LS(SEMI)                                   &kp LC(Z)      &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp LC(Y)
+&kp SLASH    &kp N4  &kp N5  &kp N6     &kp MINUS      &trans              &kp COMMA   &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LEFT_SHIFT
+&kp INT_YEN  &kp N1  &kp N2  &kp N3     &kp LS(MINUS)  &kp DOLLAR          &kp PERIOD  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &kp LEFT_CONTROL
+&trans       &kp N0  &trans  &kp LCTRL  &kp TAB        &kp LEFT_SHIFT      &trans      &trans                                                          &mkp MB5
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -217,28 +217,28 @@
 
         SYMBOL {
             bindings = <
-&trans  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(N8)                                         &kp LS(N9)   &trans  &trans    &trans   &trans
-&kp AT  &kp LS(N4)     &kp LS(N5)  &kp LS(N6)  &kp RBKT       &trans         &trans               &kp NUHS     &trans  &trans    &trans   &kp LEFT_SHIFT
-&trans  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &kp SLASH      &kp INTERNATIONAL_1  &kp LS(DOT)  &trans  &kp SEMI  &kp SQT  &trans
-&trans  &kp LS(SLASH)  &trans      &trans      &trans         &trans         &kp DELETE           &trans                                  &trans
+&trans    &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(N8)                                             &kp LS(N9)   &trans                   &trans    &trans   &kp LS(LBKT)
+&kp LBKT  &kp LS(N4)     &kp LS(N5)  &kp LS(N6)  &kp RBKT       &trans         &kp LS(INTERNATIONAL_3)  &kp NUHS     &trans                   &trans    &trans   &kp LEFT_SHIFT
+&trans    &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &kp SLASH      &kp INTERNATIONAL_1      &kp LS(DOT)  &kp LS(INTERNATIONAL_1)  &kp SEMI  &kp SQT  &trans
+&trans    &kp LS(SLASH)  &trans      &trans      &trans         &trans         &kp DELETE               &trans                                                   &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                          &trans
             >;
         };
 
         SCROLL2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
+&trans  &trans        &trans        &trans        &trans                                  &trans  &trans    &trans     &trans    &trans
+&trans  &bt BT_SEL 4  &trans        &trans        &trans  &trans              &trans      &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &bootloader         &trans      &trans  &trans    &trans     &trans    &trans
+&trans  &bt BT_SEL 0  &trans        &bt BT_CLR    &trans  &bt BT_CLR_ALL      &kp DELETE  &trans                                 &trans
             >;
         };
 
