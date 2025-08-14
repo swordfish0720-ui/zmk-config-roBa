@@ -53,7 +53,10 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
+    tapping-term-ms = <100>;
 };
+
+&lt { tapping-term-ms = <100>; };
 
 //AML誤爆防止・復帰除外キー設定
 
@@ -141,6 +144,8 @@
             label = "ENTER_L1";
             #binding-cells = <0>;
             bindings = <&lt 1 ENTER>, <&kp ENTER>;
+
+            tapping-term-ms = <100>;
         };
 
         backspace_l2: backspace_l2 {
@@ -148,6 +153,8 @@
             label = "BACKSPACE_L2";
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <100>;
         };
 
         space_l4: space_l4 {
@@ -155,6 +162,8 @@
             label = "SPACE_L4";
             #binding-cells = <0>;
             bindings = <&lt 4 SPACE>, <&kp SPACE>;
+
+            tapping-term-ms = <100>;
         };
     };
 
@@ -175,8 +184,8 @@
         ARROW_NUM {
             bindings = <
 &kp ASTERISK  &kp N7  &kp N8  &kp N9     &kp PLUS                                   &kp LC(Z)      &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp LC(Y)
-&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &kp INT_YEN         &kp COMMA   &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LEFT_SHIFT
-&trans        &kp N1  &kp N2  &kp N3     &kp EQUAL  &kp DOLLAR          &kp PERIOD  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &kp LEFT_CONTROL
+&kp SLASH     &kp N4  &kp N5  &kp N6     &kp MINUS  &trans              &kp COMMA   &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LEFT_SHIFT
+&kp INT_YEN   &kp N1  &kp N2  &kp N3     &kp EQUAL  &kp DOLLAR          &kp PERIOD  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &kp LEFT_CONTROL
 &trans        &kp N0  &trans  &kp LCTRL  &kp TAB    &kp LEFT_SHIFT      &trans      &trans                                                          &mkp MB5
             >;
 
@@ -185,10 +194,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9     &kp F10                              &trans  &trans  &trans  &trans  &trans
-&trans  &kp F4  &kp F5  &kp F6     &kp F11  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3     &kp F12  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LCTRL  &kp TAB  &kp LEFT_SHIFT      &trans  &trans                          &trans
+&trans  &kp F7  &kp F8  &kp F9     &kp F10                              &trans  &trans  &kp INS  &trans  &kp PRINTSCREEN
+&trans  &kp F4  &kp F5  &kp F6     &kp F11  &trans              &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3     &kp F12  &trans              &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &kp LCTRL  &kp TAB  &kp LEFT_SHIFT      &trans  &trans                           &kp C_PAUSE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
