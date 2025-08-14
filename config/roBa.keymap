@@ -51,15 +51,19 @@
 #define JP_UNDER LS(JP_BSLH)  // _
 
 &mt {
-    flavor = "balanced";
+    flavor = "hold-preferred";
     quick-tap-ms = <0>;
     tapping-term-ms = <200>;
+    hold-while-undecided;
+    retro-tap;
 };
 
 &lt {
     tapping-term-ms = <200>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
     quick-tap-ms = <0>;
+    hold-while-undecided;
+    retro-tap;
 };
 
 //AML誤爆防止・復帰除外キー設定
