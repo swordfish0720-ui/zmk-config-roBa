@@ -180,8 +180,8 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R               &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F               &kp G        &trans                &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp LEFT_SHIFT
-&kp Z      &kp X         &kp C         &kp V               &kp B        &kp TAB               &kp LS(EQUAL)    &kp N        &kp M  &kp COMMA  &kp DOT  &kp RCTRL
-&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &lt 4 SPACE  &lt 3 INT_HENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                             &lt 6 ESCAPE
+&kp Z      &kp X         &kp C         &kp V               &kp B        &kp ESCAPE            &kp LS(EQUAL)    &kp N        &kp M  &kp COMMA  &kp DOT  &kp RCTRL
+&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &lt 4 SPACE  &lt 3 INT_HENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                             &lt 6 LS(CAPSLOCK)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -216,6 +216,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SYMBOL {
@@ -225,6 +227,8 @@
 &trans    &kp LS(N1)     &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &kp SLASH      &kp INTERNATIONAL_1      &kp LS(DOT)  &kp LS(INTERNATIONAL_1)  &kp SEMI  &kp SQT  &trans
 &trans    &kp LS(SLASH)  &trans      &trans      &trans         &trans         &kp DELETE               &trans                                                   &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
@@ -234,6 +238,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                          &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL2 {
@@ -243,6 +249,8 @@
 &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &bootloader         &trans      &trans  &trans    &trans     &trans    &trans
 &trans  &bt BT_SEL 0  &trans        &bt BT_CLR    &trans  &bt BT_CLR_ALL      &kp DELETE  &trans                                 &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -252,6 +260,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -261,6 +271,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp DELETE  &trans                                 &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 
