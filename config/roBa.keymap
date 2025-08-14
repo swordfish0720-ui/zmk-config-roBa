@@ -145,7 +145,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 ENTER>, <&kp ENTER>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         backspace_l2: backspace_l2 {
@@ -154,7 +154,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         space_l4: space_l4 {
@@ -163,7 +163,7 @@
             #binding-cells = <0>;
             bindings = <&lt 4 SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
