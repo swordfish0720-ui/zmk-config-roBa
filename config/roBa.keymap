@@ -56,7 +56,10 @@
     tapping-term-ms = <100>;
 };
 
-&lt { tapping-term-ms = <100>; };
+&lt {
+    tapping-term-ms = <100>;
+    flavor = "hold-preferred";
+};
 
 //AML誤爆防止・復帰除外キー設定
 
