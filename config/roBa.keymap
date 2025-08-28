@@ -129,6 +129,12 @@
             key-positions = <26 25>;
             timeout-ms = <100>;
         };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <32 31>;
+            timeout-ms = <100>;
+        };
     };
 
     macros {
