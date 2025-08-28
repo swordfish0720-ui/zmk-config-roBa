@@ -109,11 +109,25 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
+            timeout-ms = <100>;
         };
 
-        kana {
-            bindings = <&kp JP_ZKHK>;
-            key-positions = <34 38>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <9 8>;
+            timeout-ms = <100>;
+        };
+
+        henkan {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <29 30>;
+            timeout-ms = <100>;
+        };
+
+        muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <26 25>;
+            timeout-ms = <100>;
         };
     };
 
@@ -187,10 +201,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R               &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F               &kp G        &trans                &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp LEFT_SHIFT
-&kp Z      &kp X         &kp C         &kp V               &kp B        &kp TAB               &kp LS(EQUAL)    &kp N        &kp M  &kp COMMA  &kp DOT  &kp RCTRL
-&kp RCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_MUHENKAN  &lt 4 SPACE  &lt 3 INT_HENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                             &lt 6 ESCAPE
+&kp Q             &kp W           &kp E           &kp R               &kp T                                               &kp Y        &kp U        &kp I           &kp O           &kp P
+&mt LEFT_SHIFT A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LCTRL F         &kp G        &trans                &kp MINUS        &kp H        &mt LCTRL J  &mt LEFT_ALT K  &mt LEFT_WIN L  &mt LEFT_SHIFT MINUS
+&kp Z             &kp X           &kp C           &kp V               &kp B        &kp TAB               &kp LS(EQUAL)    &kp N        &kp M        &kp COMMA       &kp DOT         &mt LEFT_SHIFT LS(EQUAL)
+&kp RCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt 5 INT_MUHENKAN  &lt 4 SPACE  &lt 3 INT_HENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                                               &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
