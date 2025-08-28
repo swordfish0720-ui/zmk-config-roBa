@@ -108,31 +108,26 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-            timeout-ms = <100>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <9 8>;
-            timeout-ms = <100>;
         };
 
         henkan {
             bindings = <&kp INT_HENKAN>;
             key-positions = <29 30>;
-            timeout-ms = <100>;
         };
 
         muhenkan {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <26 25>;
-            timeout-ms = <100>;
         };
 
         del {
             bindings = <&kp DELETE>;
             key-positions = <32 31>;
-            timeout-ms = <100>;
         };
     };
 
