@@ -219,7 +219,7 @@
         ARROW_NUM {
             bindings = <
 &kp LS(SQT)  &kp N7  &kp N8  &kp N9  &kp LS(SEMI)                       &kp LC(Z)      &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp LC(Y)
-&kp SLASH    &kp N4  &kp N5  &kp N6  &kp MINUS      &trans      &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &kp LEFT_SHIFT
+&kp SLASH    &kp N4  &kp N5  &kp N6  &kp MINUS      &trans      &trans  &kp PAGE_UP    &mkp LCLK       &kp DOWN_ARROW  &mkp RCLK        &mkp MB3
 &kp N0       &kp N1  &kp N2  &kp N3  &kp LS(MINUS)  &trans      &trans  &kp PAGE_DOWN  &kp HOME        &kp END         &mkp MB4         &mkp MB5
 &trans       &trans  &trans  &trans  &trans         &trans      &trans  &trans                                                          &trans
             >;
@@ -273,10 +273,10 @@
 
         Bluetooth {
             bindings = <
-&trans        &trans        &trans        &trans        &trans                              &trans  &trans    &trans     &trans    &trans
-&trans        &bt BT_SEL 4  &trans        &trans        &trans  &trans              &trans  &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &bootloader         &trans  &trans  &trans    &trans     &trans    &trans
-&trans        &trans        &trans        &bt BT_CLR    &trans  &bt BT_CLR_ALL      &trans  &trans                                 &trans
+&trans        &trans        &trans        &trans        &trans                                   &trans  &trans    &trans     &trans    &trans
+&trans        &bt BT_SEL 4  &trans        &trans        &trans       &trans              &trans  &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans       &bootloader         &trans  &trans  &trans    &trans     &trans    &trans
+&trans        &trans        &trans        &bt BT_CLR    &bootloader  &bt BT_CLR_ALL      &trans  &trans                                 &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
