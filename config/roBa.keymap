@@ -246,10 +246,10 @@
 
         SYMBOL {
             bindings = <
-&trans         &kp LS(N7)  &kp INTERNATIONAL_3  &kp SLASH   &kp LS(N8)                         &kp LS(N9)   &kp INTERNATIONAL_1      &trans    &trans   &kp LS(LBKT)
-&kp LBKT       &kp LS(N4)  &kp LS(N5)           &kp LS(N6)  &kp RBKT       &trans      &trans  &kp NUHS     &kp LS(INTERNATIONAL_3)  &trans    &trans   &trans
-&kp LS(SLASH)  &kp LS(N1)  &kp LS(N2)           &kp LS(N3)  &kp LS(COMMA)  &trans      &trans  &kp LS(DOT)  &kp LS(INTERNATIONAL_1)  &kp SEMI  &kp SQT  &trans
-&trans         &trans      &trans               &trans      &trans         &trans      &trans  &trans                                                   &trans
+&kp LBKT             &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(SLASH)                      &kp INTERNATIONAL_1  &kp EQUAL                &trans    &trans   &kp LS(LBKT)
+&kp INTERNATIONAL_3  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp RBKT       &trans      &trans  &kp NUHS             &kp LS(INTERNATIONAL_3)  &trans    &trans   &trans
+&kp LS(SLASH)        &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &trans      &trans  &kp LS(DOT)          &kp LS(INTERNATIONAL_1)  &kp SEMI  &kp SQT  &trans
+&trans               &trans      &trans      &trans      &trans         &trans      &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&encoder_msc_right_left>;
