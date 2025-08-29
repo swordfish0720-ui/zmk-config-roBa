@@ -77,19 +77,19 @@
 
 //トラックボール操作時AML動作定義
 
-&trackball_listener { input-processors = <&zip_temp_layer 7 500>; };
+&trackball_listener { input-processors = <&zip_temp_layer 6 500>; };
 
 //マウスクリック操作時AML動作定義
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 7 250>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 6 250>; };
 
 &trackball {
-    //  automouse-layer = <7>;
+    //  automouse-layer = <6>;
 
-    scroll-layers = <8>;
+    scroll-layers = <7>;
 
     arrows {
-        layers = <8>;
+        layers = <7>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
