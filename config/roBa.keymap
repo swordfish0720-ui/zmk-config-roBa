@@ -202,10 +202,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R           &kp T                                        &kp Y        &kp U        &kp I           &kp O           &kp P
-&mt LEFT_SHIFT A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LCTRL F     &kp G        &trans         &trans           &kp H        &mt LCTRL J  &mt LEFT_ALT K  &mt LEFT_WIN L  &mt LEFT_SHIFT MINUS
-&kp Z             &kp X           &kp C           &kp V           &kp B        &trans         &trans           &kp N        &kp M        &kp COMMA       &kp DOT         &lt 3 LS(EQUAL)
-&trans            &trans          &trans          &kp LEFT_SHIFT  &lt 4 SPACE  &kp LCTRL      &lt 2 BACKSPACE  &lt 1 ENTER                                               &trans
+&kp Q             &kp W           &kp E           &kp R        &kp T                                             &kp Y        &kp U        &kp I           &kp O           &kp P
+&mt LEFT_SHIFT A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LCTRL F  &kp G        &trans              &trans           &kp H        &mt LCTRL J  &mt LEFT_ALT K  &mt LEFT_WIN L  &mt LEFT_SHIFT MINUS
+&kp Z             &kp X           &kp C           &kp V        &kp B        &trans              &trans           &kp N        &kp M        &kp COMMA       &kp DOT         &lt 3 LS(EQUAL)
+&trans            &trans          &trans          &trans       &lt 4 SPACE  &kp LEFT_SHIFT      &lt 2 BACKSPACE  &lt 1 ENTER                                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -246,7 +246,7 @@
 
         SYMBOL {
             bindings = <
-&kp LBKT             &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(SLASH)                      &kp INTERNATIONAL_1  &kp EQUAL                &trans    &trans   &kp LS(LBKT)
+&kp LBKT             &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp SLASH                          &kp INTERNATIONAL_1  &kp EQUAL                &trans    &trans   &kp LS(LBKT)
 &kp INTERNATIONAL_3  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp RBKT       &trans      &trans  &kp NUHS             &kp LS(INTERNATIONAL_3)  &trans    &trans   &trans
 &kp LS(SLASH)        &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(COMMA)  &trans      &trans  &kp LS(DOT)          &kp LS(INTERNATIONAL_1)  &kp SEMI  &kp SQT  &trans
 &trans               &trans      &trans      &trans      &trans         &trans      &trans  &trans                                                           &trans
@@ -269,7 +269,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &kp RCTRL  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans     &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
             >;
