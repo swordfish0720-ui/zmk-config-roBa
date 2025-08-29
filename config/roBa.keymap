@@ -255,7 +255,7 @@
             sensor-bindings = <&encoder_msc_right_left>;
         };
 
-        layer_6 {
+        Bluetooth {
             bindings = <
 &trans        &trans        &trans        &trans        &trans                          &trans       &trans  &trans  &trans  &trans
 &trans        &bt BT_SEL 4  &trans        &trans        &trans  &trans      &trans      &trans       &trans  &trans  &trans  &trans
@@ -300,6 +300,11 @@
         SCROLL_2 {
             if-layers = <4 6>;
             then-layer = <7>;
+        };
+
+        Bluetooth {
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
